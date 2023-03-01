@@ -1,0 +1,19 @@
+name: "Awesome Curator"
+description: "Create README.md from a curated list."
+author: "Mahdi <https://github.com/xclud>"
+inputs:
+  who-to-greet: # id of input
+    description: "Who to greet"
+    required: true
+    default: "World"
+outputs:
+  time: # id of output
+    description: "The time we greeted you"
+runs:
+  using: "docker"
+  image: "AwesomeCurator/Dockerfile"
+  args:
+    - ${{ inputs.who-to-greet }}
+branding:
+  icon: "list"
+  color: "yellow"

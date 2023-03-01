@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AwesomeCurator": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
